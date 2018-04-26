@@ -1,0 +1,174 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hi",
+        "intent": "Greet",
+        "entities": []
+      },
+      {
+        "text": "Hello",
+        "intent": "Greet",
+        "entities": []
+      },
+      {
+        "text": "hola",
+        "intent": "Greet",
+        "entities": []
+      },
+      {
+        "text": "hay",
+        "intent": "Greet",
+        "entities": []
+      },
+      {
+        "text": "hi it's me ",
+        "intent": "Greet",
+        "entities": []
+      },
+      {
+        "text": "hi i'm ",
+        "intent": "Greet",
+        "entities": []
+      },
+      {
+        "text": "show me chinese restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for a place to eat",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "show me good restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "show me restaurants in Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Mumbai",
+			 "synonyms": ["bombay"],
+            "entity": "Town"
+          }
+        ]
+      },
+      {
+        "text": "show me restaurants in North Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "Mumbai",
+            "entity": "Town"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "North",
+            "entity": "area"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking for a place to eat in North Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 34,
+            "end": 39,
+            "value": "North",
+            "entity": "area"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "value": "Mumbai",
+            "entity": "Town"
+          }
+        ]
+      },
+      {
+        "text": "places to eat in South Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "South",
+            "entity": "area"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "value": "Mumbai",
+            "entity": "Town"
+          }
+        ]
+      },
+      {
+        "text": "restaurants in East Mumbai",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": " East",
+            "entity": "area"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "Mumbai",
+            "entity": "Town"
+          }
+        ]
+      },
+      {
+        "text": "show me restaurants in Bagalore",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "Bagalore",
+            "entity": "Town"
+          }
+        ]
+      },
+      {
+        "text": "show  restaurants in South Bangalore ",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 37,
+            "value": "Bangalore ",
+			 "synonyms": ["blr","bengaluru","bangalore city"],
+            "entity": "Town"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "South",
+            "entity": "area"
+          }
+        ]
+      }
+    ]
+  }
+}
