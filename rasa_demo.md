@@ -265,3 +265,4 @@ python -m rasa_nlu.server -c “C:\Users\uday.a\AppData\Local\Continuum\anaconda
 13. Now go to http://localhost:5000/ in your browser, it should show you the following msg
 
 14. Now your rasa service is running 
+![](https://github.com/udayallu/rasa_nlu/blob/master/Photos/img12.PNG)
