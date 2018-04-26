@@ -52,8 +52,8 @@ https://yuukanoo.github.io/tracy
 }
 ```
 ## Entity Synonyms
-- If you define entities as having the same value they will be treated as synonyms. Here is an example of that:
-````
+### If you define entities as having the same value they will be treated as synonyms. Here is an example of that:
+```
 [
   {
     "text": "in the center of NYC",
@@ -80,8 +80,11 @@ https://yuukanoo.github.io/tracy
     ]
   }
 ]
+
 ```
-- as you can see, the entity city has the value New York City in both examples, even though the text in the first example states NYC.
+
+
+- As you can see, the entity city has the value New York City in both examples, even though the text in the first example states NYC.
 - Alternatively, you can add an “entity_synonyms” array to define several synonyms to one entity value. Here is an example of that:
 ```
 {
@@ -95,10 +98,13 @@ https://yuukanoo.github.io/tracy
   }
 }
 ```
+
 ## POST /evaluate
 - You can use this endpoint to evaluate data on a model. The query string takes the project (required) and a model (optional).
 - You must specify the project in which the model is located. N.b. if you don’t specify a model, the latest one will be selected. 
 - This endpoint returns some common sklearn evaluation metrics (accuracy, f1 score, precision, as well as a summary report).
+
+
 ```
 $ curl -XPOST localhost:5000/evaluate?project=my_project&model=model_XXXXXX -d @data/examples/rasa/demo-rasa.json | python -mjson.tool
 
@@ -120,6 +126,7 @@ $ curl -XPOST localhost:5000/evaluate?project=my_project&model=model_XXXXXX -d @
 ```
 ## GET /status
 - This returns all the currently available projects, their status (training or ready) and their models loaded in memory. also returns a list of available projects the server can use to fulfill /parse requests.
+
 ```
 $ curl localhost:5000/status | python -mjson.tool
 
