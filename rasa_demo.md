@@ -6,6 +6,7 @@
 
 ## Steps
 1. Open the Anaconda Prompt in the **Admin mode**.
+![](https://github.com/udayallu/rasa_nlu/blob/master/Photos/img1.PNG)
 2. We need to create an Virtual Environment for Python.
 ```
 conda create -n [type venv name] [type python= version] pip
@@ -241,6 +242,7 @@ Note: If you face any error while installing the above commands please resolve t
 python -m rasa_nlu.train -c "C:\Users\uday.a\AppData\Local\Continuum\anaconda3\envs\py35\demobot_folder\config_spacy1.json"
 ```
 9. Now after running the above command you will get a **Finished Training Message** and a **mode-code** make a note of the code.
+![](https://github.com/udayallu/rasa_nlu/blob/master/Photos/img10.PNG)
 10. now go to the config_spacy1.json and edit the code, by adding a "," after the project name and add the following code
 - note the model code is what you got before and save it 
 ```
@@ -259,10 +261,21 @@ python -m rasa_nlu.train -c "C:\Users\uday.a\AppData\Local\Continuum\anaconda3\e
 12. Now run the following code
 ```
 python -m rasa_nlu.server -c “C:\Users\uday.a\AppData\Local\Continuum\anaconda3\envs\py35\demobot_folder\config_spacy1.json”
+
 ```
+![](https://github.com/udayallu/rasa_nlu/blob/master/Photos/img11.PNG)
 - the service will start now, if not started press enter and wait in the cmd 
 
 13. Now go to http://localhost:5000/ in your browser, it should show you the following msg
 
 14. Now your rasa service is running 
 ![](https://github.com/udayallu/rasa_nlu/blob/master/Photos/img12.PNG)
+
+15. Now you need to try different sentences to check the model accuracy 
+- in the below url i'm trying to query the url as "show reasturants in west bangalore"
+- the prkect name is your bot_rasas which is the folder name we created inside the folder.
+- %20 is the space
+http://localhost:5000/parse?project=bot_rasa&q=show%20%reasturants%20in%20west%20banaglore
+
+![](https://github.com/udayallu/rasa_nlu/blob/master/Photos/Capture.PNG)
+
