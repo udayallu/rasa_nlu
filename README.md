@@ -145,4 +145,4 @@ $ curl localhost:5000/status | python -mjson.tool
 ## Entity Extraction
 - There are a number of different entity extraction components, which can seem intimidating for new users. Here we’ll go through a few use cases and make recommendations of what to use.
 
-![]
+![alt-text](https://github.com/udayallu/rasa_nlu/blob/master/Photos/img123.PNG)
